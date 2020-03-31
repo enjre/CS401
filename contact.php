@@ -16,6 +16,16 @@
         <div><p>Reach us on <a href="https://www.facebook.com/BoneHausBand/?ref=bookmarks"> Facebook </a>, 
           <a href="https://www.instagram.com/bonehausofficial/"> Instagram</a> or at hmiller10191@gmail.com</p></div>
 
+<?php
+    if(filter_has_var(INPUT_POST, 'name')){
+        echo 'name found';
+    } else{
+        echo 'Please input a name';
+    }
+?>
+
+
+
     <body>
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
              <p> Name: <input type="text" name="name" value=""></p>
