@@ -19,10 +19,10 @@
     <body>
           <?php 
            pre_r($_POST);
-          // if (isset($_POST['submit'])) {
-          //   echo "Thanks you for contacting us".$_POST['name'].'<br />';
-          //   echo "We will email you at ".$_POST['email'].'<br />';
-          // }
+          if (isset($_POST['submit'])) {
+            echo "Thanks you for contacting us".$_POST['name'].'<br />';
+            echo "We will email you at ".$_POST['email'].'<br />';
+          }
           ?>
 
             <form action="" method="POST">
