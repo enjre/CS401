@@ -17,20 +17,23 @@
           <a href="https://www.instagram.com/bonehausofficial/"> Instagram</a> or at hmiller10191@gmail.com</p></div>
 
     <body>
-          <?php 
-          // pre_r($_POST);
-          if (isset($_POST['submit'])) {
-            echo "Thanks you for contacting us ".$_POST['name'].'<br />'."!";
-            echo "We will email you at ".$_POST['email'].'<br />';
-          }
-          ?>
-
+      
             <form action="" method="POST">
              <p> Name: <input type="text" name="name" value=""></p>
              <p> E-mail: <input type="text" name="email" value =""></p>
               <p>Message: <textarea name="message" rows="5" cols="40"> </textarea></p>
               <p><input type="submit" name="submit" value="Submit"></p>
             </form>
+
+            <div id="output" name="output" align="center">
+          <?php 
+          // pre_r($_POST);
+          if (isset($_POST['submit'])) {
+            echo "Thanks you for contacting us ".$_POST['name']."!".'<br />';
+            echo "We will email you at ".$_POST['email'].'<br />';
+          }
+          ?>
+      </div>
     </body>
 </html>
 
