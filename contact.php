@@ -27,16 +27,19 @@ $errors= array();
         if(!preg_match("/^([a-zA-Z' ]+)$/" , $name)){
             $errors[] = "Invalid name format";
         } 
+        else{
+          $name= filter_var($name, FILTER_SANITIZE_STRING);
+        }
       } 
-
-
 
     //validate and sanitize email
     if(filter_has_var(INPUT_POST, 'email')){
         $email = $_POST['email'];
         if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
           $errors[] = "Invalid email format";
-        }  
+        }  else{
+          $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+        }
     } 
 
     //validate and sanitize message
