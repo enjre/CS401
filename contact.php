@@ -17,11 +17,13 @@
           <a href="https://www.instagram.com/bonehausofficial/"> Instagram</a> or at hmiller10191@gmail.com</p></div>
 
 <?php
-    if(filter_has_var(INPUT_POST, 'name')){
-        echo 'name found';
-    } else{
-        echo 'Please input a name';
-    }
+    if(filter_has_var(INPUT_POST, 'email')){
+        if(filter_input(INPUT_POST,'email', FILTER_VALIDATE_EMAIL)){
+          echo 'email is valid';
+        } else{
+          echo ' email not valid';
+        }
+    } 
 ?>
 
 
