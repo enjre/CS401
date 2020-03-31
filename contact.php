@@ -17,10 +17,16 @@
           <a href="https://www.instagram.com/bonehausofficial/"> Instagram</a> or at hmiller10191@gmail.com</p></div>
 
 <?php
+  session_start();
+
+$errors= array();
+
     //validate and sanitize name
       if(filter_has_var(INPUT_POST, 'name')){
         $name = $_POST['name'];
-
+        if(!preg_match("/^([a-zA-Z' ]+)$/" , $name)){
+            $errors[] = "Invalid name format";
+        } 
       } 
 
 
@@ -28,16 +34,24 @@
     //validate and sanitize email
     if(filter_has_var(INPUT_POST, 'email')){
         $email = $_POST['email'];
-
-        $email= filter_var($email, FILTER_SANITIZE_EMAIL);
-           echo $email.'<br>';
-
-        if(filter_input(INPUT_POST,'email', FILTER_VALIDATE_EMAIL)){
-          echo 'email is valid';
-        } else{
-          echo ' email not valid';
-        }
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+          $errors[] = "Invalid email format";
+        }  
     } 
+
+    //validate and sanitize message
+      if(strlen($_POST['message']) > 500){
+        $errors[] = "Message can only be 500 characters long";
+      }
+
+      if(strlen($_POST['message']) == 0){
+        $errors[] = "Please leave a message before submitting";
+      }
+
+
+
+
+
 ?>
 
 
