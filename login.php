@@ -15,7 +15,7 @@
                 }
             ?>
 
-            <form action="login_handler.php" method="POST">
+            <form action="login_handler.php" method="POST" align="center">
                 <div><label for="username">Username: <input type="textbox" id="username" name="username" /></div>
                 <div><label for="password">Password: <input type="password" id="password" name="password" /></div>
                 <div><input type="submit"/></div>
