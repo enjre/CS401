@@ -7,7 +7,6 @@ $password = "Boise123!";
 
 if($username == $_POST['username'] && $password == $_POST['password']){
     $_SESSION['auth'] = true;
-    header("Location: http://CS401/message.php")
     exit;
 } else{
     $_SESSION['auth'] = false;
