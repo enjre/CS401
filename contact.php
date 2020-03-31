@@ -17,7 +17,21 @@
           <a href="https://www.instagram.com/bonehausofficial/"> Instagram</a> or at hmiller10191@gmail.com</p></div>
 
 <?php
+    //validate and sanitize name
+      if(filter_has_var(INPUT_POST, 'name')){
+        $name = $_POST['name'];
+
+      } 
+
+
+
+    //validate and sanitize email
     if(filter_has_var(INPUT_POST, 'email')){
+        $email = $_POST['name'];
+
+        $email= filter_var($email, FILTER_SANITIZE_EMAIL);
+        echo $email.'<br>';
+
         if(filter_input(INPUT_POST,'email', FILTER_VALIDATE_EMAIL)){
           echo 'email is valid';
         } else{
