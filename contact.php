@@ -27,7 +27,7 @@
 
             <div id="output" name="output" align="center">
           <?php 
-          // pre_r($_POST);
+          
           if (isset($_POST['submit'])) {
             echo "Thanks you for contacting us ".$_POST['name']."!".'<br />';
             echo "We will email you at ".$_POST['email'].'<br />';
@@ -36,11 +36,3 @@
       </div>
     </body>
 </html>
-
-    <?php
-        function pre_r( $array ){
-              echo '<pre>';
-                print_r($array);
-                echo '</pre>';
-            }
-    ?>
