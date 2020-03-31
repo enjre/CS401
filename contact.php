@@ -10,6 +10,7 @@
         <a href="media.html" id="Media" >Media</a>
         <a href="gallery.html" id="Gallery" >Gallery</a>
         <a href="contact.html" id="Contact" >Contact</a>
+        <a href="login.php" id="login">Login</a>
         </h2>
 
         <h3>CONTACT</h3>
