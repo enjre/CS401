@@ -1,0 +1,19 @@
+CREATE TABLE "users" (
+    ID INT NOT NULL,
+    email VARCHAR(64) NOT NULL PRIMARY KEY ,
+    password VARCHAR(64) NOT NULL,
+    name VARCHAR(256) NOT NULL,
+    
+);
+
+CREATE TABLE "songs" (
+    ID INT NOT NULL,
+    song VARCHAR(64) NOT NULL PRIMARY KEY,
+    length VARCHAR(1024)
+)
+
+CREATE TABLE "albums" (
+    ID INT NOT NULL,
+    album VARCHAR(64) NOT NULL PRIMARY KEY,
+    length VARCHAR(64) NOT NULL,
+)
