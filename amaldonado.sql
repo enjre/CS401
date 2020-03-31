@@ -1,8 +1,9 @@
-CREATE TABLE "users" (
+CREATE TABLE "Users" (
     ID INT NOT NULL,
     email VARCHAR(64) NOT NULL PRIMARY KEY ,
     password VARCHAR(64) NOT NULL,
     name VARCHAR(256) NOT NULL,
+    message VARCHAR(500) NOT NULL,
     
 );
 
