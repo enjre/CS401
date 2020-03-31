@@ -27,10 +27,10 @@
 
     //validate and sanitize email
     if(filter_has_var(INPUT_POST, 'email')){
-        $email = $_POST['name'];
+        $email = $_POST['email'];
 
         $email= filter_var($email, FILTER_SANITIZE_EMAIL);
-        echo $email.'<br>';
+           echo $email.'<br>';
 
         if(filter_input(INPUT_POST,'email', FILTER_VALIDATE_EMAIL)){
           echo 'email is valid';
