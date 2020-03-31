@@ -12,5 +12,5 @@ if($username == $_POST['username'] && $password == $_POST['password']){
 } else{
     $_SESSION['auth'] = false;
     $_SESSION['message'] = "Invalid username or password";
-    header("Location: http://CS401/login.php");
+    header("Location: login.php");
 }
