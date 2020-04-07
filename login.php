@@ -26,6 +26,7 @@
     </html>
 
     <?php 
+    session_start();
         $conn = mysqli_connect("localhost","root", "", "admin"); 
 
         if(isset($_POST["submit"])){
