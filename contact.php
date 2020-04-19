@@ -14,8 +14,7 @@
         </h2>
 
         <h3>CONTACT</h3>
-        <div><p>Reach us on <a href="https://www.facebook.com/BoneHausBand/?ref=bookmarks"> Facebook </a>, 
-          <a href="https://www.instagram.com/bonehausofficial/"> Instagram</a> or at bonehausofficial@gmail.com</p></div>
+        <div><p>Reach us on <a href="media.html">social media</a> or at bonehausofficial@gmail.com</p></div>
 
 <?php
   session_start();
