@@ -2,10 +2,13 @@
 
 session_start();
 
-$username = "andremaldonado";
-$password = "Boise123!";
-//$username= test_input($_POST['username']);
-//$password= test_input($_POST['password']);
+//$username = "andremaldonado";
+//$password = "Boise123!";
+// $username= test_input($_POST['username']);
+// $password= test_input($_POST['password']);
+
+$username= $_POST['username'];
+$password= $_POST['password'];
 
 
 $salt = 'abs0lutez3r0';
