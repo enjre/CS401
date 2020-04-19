@@ -5,12 +5,32 @@ session_start();
 $username = "andremaldonado";
 $password = "Boise123!";
 
-if($username == $_POST['username'] && $password == $_POST['password']){
-    $_SESSION['auth'] = true;
-    header("Location: index.html");
-    exit;
-} else{
-    $_SESSION['auth'] = false;
-    $_SESSION['message'] = "Invalid username or password";
+
+$salt = '';
+$saltedPW = $password . $salt;
+$hashedPW = hash('sha256', $saltedPW);
+
+if(empty($username)) {
+    $_SESSION['good'] = false;
+    $_SESSION['message'] = "Username cannot be empty";
     header("Location: login.php");
+}
+
+
+require_once 'Dao.php';
+$dao = new Dao();
+
+$loginMatch = $dao->userLogin($username, $hashedPW);
+
+if($loginMatch['Username'] == $username && $loginMatch['Password'] == $hashedPW) {
+    $_SESSION['good'] = true;
+    $_SESSION['Message'] = "You are logged in";
+    $_SESSION['logged_in'] = true;
+    header("Location: login.php");
+    exit();
+} else {
+    $_SESSION['good'] = false;
+    $_SESSION['message'] = "Username or password not valid";
+    header("Location: login.php");
+    exit();
 }
