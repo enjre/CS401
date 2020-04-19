@@ -2,8 +2,10 @@
 
 session_start();
 
-$username = "andremaldonado";
-$password = "Boise123!";
+//$username = "andremaldonado";
+//$password = "Boise123!";
+$username= test_input($_POST['username']);
+$password= test_input($_POST['password']);
 
 
 $salt = '';
