@@ -4,12 +4,19 @@ session_start();
 
 //$username = "andremaldonado";
 //$password = "Boise123!";
-// $username= test_input($_POST['username']);
-// $password= test_input($_POST['password']);
 
-$username= $_POST['username'];
-$password= $_POST['password'];
+// function checkInput ($dat){
+//     $dat = trim($dat);
+//     $dat = stripslashes($dat);
+//     $dat = htmlspecialchars($dat);
+//     return $dat;
+// }
 
+//  $username= checkInput($_POST['username']);
+//  $password= checkInput($_POST['password']);
+
+$username = 'andremaldonado';
+$password = 'Boise123!';
 
 $salt = 'abs0lutez3r0';
 $saltedPW = $password . $salt;
@@ -29,14 +36,14 @@ $dao = new Dao();
 $loginMatch = $dao->userLogin($username, $hashedPW);
 
 if($loginMatch['Username'] == $username && $loginMatch['Password'] == $hashedPW) {
-    $_SESSION['good'] = true;
+    $_SESSION['auth'] = true;
     $_SESSION['Message'] = "You are logged in";
     $_SESSION['logged_in'] = true;
     header("Location: index.php");
     exit();
 } else {
-    $_SESSION['good'] = false;
-    $_SESSION['message'] = "Username or password not valid";
+    $_SESSION['auth'] = false;
+    $_SESSION['message'] = "Username or password invalid";
     header("Location: login.php");
     exit();
 }
