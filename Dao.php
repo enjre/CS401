@@ -1,11 +1,10 @@
 <?php
 class Dao {
 
-  private $host = 'localhost';
-  private $dbname = 'amald';
-  private $username = 'andremaldonado';
-  private $password = 'Boise123!';
-  private $logger;
+  private $host = 'us-cdbr-iron-east-01.cleardb.net';
+  private $db = 'heroku_b42d25b6e0581b1';
+  private $username = 'mb38372fd919298';
+  private $password = '90733de7';
 
     
     public function getConnection() {
@@ -33,7 +32,7 @@ class Dao {
 
     public function createLogin($username, $password) {
       $conn = $this->getConnection();
-      $saveQuery = "INSERT INTO Users (name,password) values (:Username, :Password)";
+      $saveQuery = "INSERT INTO Users (name,password) values (:Username, :Password);";
       $q = $conn->prepare($saveQuery);
       $q->bindParam(":Username", $username);
       $q->bindParam(":Password", $password);

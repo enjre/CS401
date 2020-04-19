@@ -20,3 +20,5 @@ CREATE TABLE "albums" (
     album VARCHAR(64) NOT NULL PRIMARY KEY,
     length VARCHAR(64) NOT NULL,
 )
+
+/*mysql://b38372fd919298:90733de7@us-cdbr-iron-east-01.cleardb.net/heroku_b42d25b6e0581b1?reconnect=true
