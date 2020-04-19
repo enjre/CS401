@@ -29,7 +29,7 @@ if($loginMatch['Username'] == $username && $loginMatch['Password'] == $hashedPW)
     $_SESSION['good'] = true;
     $_SESSION['Message'] = "You are logged in";
     $_SESSION['logged_in'] = true;
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 } else {
     $_SESSION['good'] = false;
