@@ -1,3 +1,5 @@
+create DATABASE amald;
+
 CREATE TABLE "Users" (
     ID INT NOT NULL,
     email VARCHAR(64) NOT NULL PRIMARY KEY ,
