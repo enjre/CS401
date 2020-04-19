@@ -8,7 +8,7 @@
         </head>
         <body>
             <h1>Please Log In</h1>
-
+    <?php include("index.php"); ?>
 
             <?php 
         if(isset($_SESSION['message'])) {
