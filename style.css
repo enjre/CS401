@@ -64,13 +64,13 @@ td{
  .col{
     float: left;
  }
- .full-image {
+ .full-image img{
     width: 580px;
     height: 580px;
     padding: 10px;
  }
-
+/* 
  .full-image img{
    width: 100px;
    height: 100px;
-}
+} */
