@@ -31,7 +31,7 @@
         
             <?php 
 
-            $user = "";
+            $user = " ";
 
                 if(isset($_SESSION['username'])) {
                     $user = $_SESSION['username'];

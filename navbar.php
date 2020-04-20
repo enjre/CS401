@@ -20,7 +20,7 @@
         <li <?php if ($thisPage == "gallery")
             echo " id=\"currentpage\""; ?> ><a href="gallery.php">GALLERY</a></li>
 
-        <li <?php if ($thisPage == "Contact")
+        <li <?php if ($thisPage == "contact")
             echo " id=\"currentpage\""; ?> ><a href="contact.php">CONTACT</a></li>
     </ul>
 </div>
