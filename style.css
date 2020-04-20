@@ -127,5 +127,6 @@ td{
 
  .loginbox {
     text-align: center;
-    font-size: large;
+    font-size: larger;
+    padding: 10px;
  }
