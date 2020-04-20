@@ -94,4 +94,6 @@ td{
     margin: 0;
     padding: 0;
     display: inline;
+    background-color: red;
+    overflow: hidden;
  }
