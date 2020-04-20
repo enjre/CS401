@@ -8,13 +8,12 @@ class Dao {
 
     
     public function getConnection() {
-        $conn = new PDO("mysql:host={{this->host};dbname={this->db}", $this->username,$this->password);
-        return $conn;
+        return new PDO("mysql:host={{this->host};dbname={this->db}", $this->username,$this->password);
     }
 
     public function userLogin ( $username, $password) {
       $conn = $this->getConnection();
-      $grab = $conn->prepare("SELECT * from Users where name = '$username' and Password = '$password");
+      $grab = $conn->prepare("SELECT * from Users where name = '$username' and Password = '$password'");
       $grab->execute();
       $result = $grab->fetch(PdO::FETCH_ASSOC);
       return $result;
