@@ -9,7 +9,7 @@ class Dao {
     
     public function getConnection() {
       try{
-        $conn= new PDO("mysql:host={{this->host};dbname={this->dbname}", $this->username,$this->password);
+        $conn= new PDO("mysql:host={this->host};dbname={this->dbname}", $this->username,$this->password);
       } catch (Exception $e) {
           return null;
       }
