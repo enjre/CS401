@@ -8,6 +8,9 @@ a:any-link{
    color: white;
    font-size: x-large;
 }
+a:hover{
+   font-size: xx-large;
+}
 
 ul {
    align-items: center;
