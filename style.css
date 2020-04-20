@@ -78,3 +78,11 @@ td{
     0%{opacity: .1;}
     100%{opacity: 1}
  }
+
+ .spot {
+    align-items: left;
+ }
+
+ .video {
+   align-items: right;
+ }
