@@ -151,8 +151,11 @@ p {
 
 .spot {
    text-align: left;
+   width: 50%;
+   float: left;
 }
 
 .links {
    text-align: center;
+   width: 50%;
 }
