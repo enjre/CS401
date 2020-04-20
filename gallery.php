@@ -36,12 +36,12 @@
               <div class="box"><img src="imgs/bh10.jpg"></div>
               <div class="box"><img src="imgs/bh11.jpg" width="400px" height="600px"></div>
           </div>
-          <div class="col">
+          <!-- <div class="col">
             <div class="full-image">
               <img src="imgs/bh1.jpg" width="500px" height="500px">
             </div>
 
-        </div>
+          </div> -->
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
@@ -60,7 +60,7 @@
 
 <script type="text/javascript">
  $(document).ready(function(){
-  $('.container').slick({
+  $('.col').slick({
     setting-name: setting-value
   });
 </script>
