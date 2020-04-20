@@ -71,15 +71,14 @@ td{
  }
  .full-image img {
     padding: 10px;
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
     animation: ani .5s linear 1;
  }
 
  .full-image.sticky {
    position: sticky;
    position: -webkit-sticky;
-   margin-left: auto;
-   margin-right: auto;
  }
 /* .full-image {
    position: sticky;
