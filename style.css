@@ -159,18 +159,19 @@ p {
 
 .spot {
    text-align: left;
-   width: 40%;
+   width: 30%;
    float: left;
 }
 
 .links {
    text-align: center;
-   width: 40%;
+   width: 30%;
    float: left;
 }
 
 .video {
-   width: 60%;
+   width: 30%;
+   float:left;
  }
 
  .formitem {
