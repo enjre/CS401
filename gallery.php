@@ -1,6 +1,8 @@
 <?php $thisPage = "gallery";?>
 <html>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
   <head>
 
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -33,6 +35,9 @@
               <div class="box"><img src="imgs/bh9.jpg"></div>
               <div class="box"><img src="imgs/bh10.jpg"></div>
               <div class="box"><img src="imgs/bh11.jpg" width="400px" height="600px"></div>
+              
+
+
           </div>
           <div class="col">
             <div class="full-image">
@@ -42,8 +47,6 @@
         </div>
         </div>
 
-        
-
 <script type="text/javascript">
   $(document).ready(function(){
     $('.box').click(function(){
@@ -52,7 +55,6 @@
   });
 });
 </script>
-
 
 
     </body>
