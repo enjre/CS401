@@ -72,9 +72,15 @@
                <input id="email" type="email" name="email" required/>
               </p>
 
-             <p><label for="subject">Subject: <input type="text" name="subject" value=""></label></p>
+             <p>
+               <label for="subject">Subject: <span> (optional)</span> </label>
+               <input id="subject" type="text" name="subject" />
+              </p>
 
-             <p><label for="message">Message: <textarea name="message" rows="5" cols="40"> </textarea> </label></p>
+             <p>
+               <label for="message">Message:</label>
+               <textarea id="message" name="message" rows="5" cols="40" required> </textarea>
+              </p>
 
              <p><input type="submit" name="submit" value="Submit"></p>
             </form>
