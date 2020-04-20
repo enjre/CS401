@@ -72,7 +72,8 @@ td{
  .full-image img{
     padding: 10px;
     float: right;
-    /* object-position: 20px 10%; */
+    position: -webkit-sticky;
+    position: sticky;
     animation: ani .5s linear 1;
  }
 

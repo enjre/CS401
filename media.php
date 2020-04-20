@@ -28,10 +28,12 @@
          
     
       <div class="spot" id="spotify">
+        Check us out on Spotify!
         <iframe src="https://open.spotify.com/embed/album/3VWLTbsbJMVh3GB00Zjbea" width="340" height="428" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
 
     <div id="youtube" class="video">
+      Check out our live performance at Moonraker Studios!
       <iframe width="560" height="315" src="https://www.youtube.com/embed/OxJKNi-_q04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     </body>
