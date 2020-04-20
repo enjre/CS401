@@ -20,7 +20,7 @@
         <div class="title">
             <h1>BONE HAUS</h1>
 
-        <h1>Please Log In</h1>
+        
         </div>
 
       
@@ -41,6 +41,7 @@
              ?>
         
         <div class="loginbox">
+            <h1>Please Log In</h1>
             <form action="login_handler.php" method="post">
                 <div class="formitem"><label for="username"> Username:<input type="text" id="username" name="username" /></div>
                 <div class="formitem"><label for="password">Password:<input type="password" id="password" name="password" /></div>
