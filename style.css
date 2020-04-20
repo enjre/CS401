@@ -64,14 +64,14 @@ td{
  }
 
  .col{
-    float: left;
+    float: right;
     /* object-position: 20px 10%; */
  }
  .full-image img{
     /* width: 580px; */
     height: 580px;
     padding: 10px;
-    float: right;
+    /* float: right; */
     /* object-position: 20px 10%; */
     animation: ani .5s linear 1;
  }
