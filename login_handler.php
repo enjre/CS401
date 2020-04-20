@@ -55,6 +55,7 @@ if(empty($username) || empty($password))
 			$_SESSION['errorLPass'] = "";
 			$_SESSION['errorUser'] = "";
 			header("Location: login.php");
+			alert("DIDNT WORK");
 		}
 	}
 

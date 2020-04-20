@@ -41,12 +41,14 @@
              ?>
         
         <div class="loginbox">
+            <section>
             <h1>Please Log In</h1>
             <form action="login_handler.php" method="post">
                 <div class="formitem"><label for="username"> Username:<input type="text" id="username" name="username" /></div>
                 <div class="formitem"><label for="password">Password:<input type="password" id="password" name="password" /></div>
                 <div class="formitem"><input type="submit" name="submit" value="submit"></div>
             </form>
+            </section>
 
         </div>
         </body>

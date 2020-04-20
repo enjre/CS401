@@ -57,8 +57,6 @@
 
 ?>
 
-
-
     <body>
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
              <p><label for="name"> Name: <input type="text" name="name" value=""></label></p>
@@ -87,7 +85,7 @@
             $to_email = 'bonehausofficial@gmail.com';
             $subject = $_POST['subject'];
             $message =$_POST['message'];
-            $headers = 'From:' . $_POST['email'];
+            $headers = 'From: ' . $_POST['email'];
             $secure_check = sanitize_my_email($to_email);
             if($secure_check == false) {
                 echo "Invalid input";
