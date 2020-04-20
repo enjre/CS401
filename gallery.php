@@ -32,7 +32,6 @@
           
             <div class="full-image">
               <img class="sticky" src="imgs/bh1.jpg" width="500px" height="500px">
-            
             </div>
         
 
