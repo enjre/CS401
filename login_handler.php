@@ -6,35 +6,29 @@ require_once " Dao.php";
 
 $dao = new Dao();
 $username = $_POST['username'];
-$username = filter_var($username,FILTER_SANITIZE_STRING);
 $password = $_POST['password'];
-$user = $dao->userLogin($username);
-$_SESSION['email_preset'] = $_POST['username'];
-$valid = true;
-$messages = array();
+
+$username = filter_var($username,FILTER_SANITIZE_STRING);
 
 
+$_SESSION['user'] = $username;
+$_SESSION['pass'] = $password;
 
 
-$salt = 'abs0lutez3r0';
-$saltedPW = $password . $salt;
-$hashedPW = hash('sha256', $saltedPW);
 
 
 if((empty($username)) || (empty($password))) {
-    $messages[] = "Username and password cannot be blank";
+    
     $valid = false;
     echo " Please enter a valid username";
 }
 
 if(empty($username)){
-    $messages[] = "Please enter a valid username";
     $valid = false;
     echo "Please enter a valid username";
 }
 
 if(empty($password)){
-    $messages[] = "Please enter a valid password";
     $valid = false;
     echo "Please enter a valid password";
 }
@@ -66,6 +60,10 @@ if(!$valid) {
         header("Location: login.php");
         exit();
 }
+
+$salt = 'abs0lutez3r0';
+$saltedPW = $password . $salt;
+$hashedPW = hash('sha256', $saltedPW);
 
 $_SESSION['sentiment'] = "good";
 header("Location: index.php");
