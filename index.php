@@ -46,10 +46,6 @@
             </table>
         </div>
 
-    <div id="album" class="image">
-        <img src="imgs/bh1.jpg" width= "20%" height="20%" align="left">
-    </div>
-
     </body>
 
 
