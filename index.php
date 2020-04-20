@@ -14,7 +14,10 @@
             <?php include("navbar.php"); ?>
         </h2>
 
-        <h3>UPCOMING SHOWS</h3>
+        <div> <img src="imgs/bh3.jpg"></div>
+
+
+        <h4>UPCOMING SHOWS</h4>
 
         <div>
             <table style="width:40%">
