@@ -75,7 +75,7 @@ td{
     animation: ani .5s linear 1;
  }
 
- div.col full-image {
+ col full-image {
    position: -webkit-sticky;
    position: sticky;
  }
