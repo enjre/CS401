@@ -15,7 +15,7 @@
            
         <h3>GALLERY</h3>
         
-        <div class="container">
+        
           <div class="col">
               <div class="box"><img src="imgs/bh1.jpg" width="500px" height="500px"></div>
               <div class="box"><img src="imgs/bh2.jpg"></div>
@@ -34,7 +34,7 @@
               <img src="imgs/bh1.jpg" width="500px" height="500px">
             
             </div>
-        </div>
+        
 
 <script type="text/javascript">
   $(document).ready(function(){
