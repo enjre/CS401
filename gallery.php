@@ -1,5 +1,13 @@
 <?php $thisPage = "gallery";?>
 <html>
+
+<head> 
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
 <header><title>BONE HAUS-GALLERY </title></header>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script> 
 
@@ -13,12 +21,11 @@
             <?php include("navbar.php"); ?>
         </h2>
            
-        <h3>GALLERY</h3>
+        <h3>IMAGE GALLERY</h3>
         
         
           <div class="col">
               <div class="box"><img src="imgs/bh1.jpg" width="500px" height="500px"></div>
-              <!-- <div class="box"><img src="imgs/bh2.jpg"></div> -->
               <div class="box"><img src="imgs/bh3.jpg" width="500px" height="500px"></div>
               <div class="box"><img src="imgs/bh4.jpg"></div>
               <div class="box"><img src="imgs/bh5.jpg" width="800px" height="600px"></div>
@@ -50,20 +57,5 @@
 
 </script>
 
-
-
-
-          <!-- <div class="row">
-            <div class="column">
-              <img src="imgs/bh2.jpg" width="30%" height="30%">
-              <img src="imgs/bh3.jpg" width= "30%" height="30%">
-            </div>
-            <div class="column">
-              <img src="imgs/bh4.jpg" width= "60%" height="30%">
-            </div>
-          </div> -->
-        <!-- <div id="album" class="image">
-          <img src="imgs/bh1.jpg" width= "40%" height="40%">
-      </div> -->
     </body>
 </html>
