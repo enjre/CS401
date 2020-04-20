@@ -1,19 +1,17 @@
 <?php $thisPage = "gallery";?>
 <html>
+
   <head>
 
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-   Add the new slick-theme.css if you want the default styling
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 <header><title>BONE HAUS-GALLERY </title></header>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script> 
 
 
-<link rel="stylesheet" type="text/css" href="style.css">
+
+
     <body>
             
        <h1>BONE HAUS</h1>
@@ -37,9 +35,6 @@
               <div class="box"><img src="imgs/bh9.jpg"></div>
               <div class="box"><img src="imgs/bh10.jpg"></div>
               <div class="box"><img src="imgs/bh11.jpg" width="400px" height="600px"></div>
-              
-
-
           </div>
           <div class="col">
             <div class="full-image">
@@ -48,6 +43,11 @@
 
         </div>
         </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script> 
 
 <!-- <script type="text/javascript">
   $(document).ready(function(){
@@ -68,17 +68,6 @@
 
 
 
-          <!-- <div class="row">
-            <div class="column">
-              <img src="imgs/bh2.jpg" width="30%" height="30%">
-              <img src="imgs/bh3.jpg" width= "30%" height="30%">
-            </div>
-            <div class="column">
-              <img src="imgs/bh4.jpg" width= "60%" height="30%">
-            </div>
-          </div> -->
-        <!-- <div id="album" class="image">
-          <img src="imgs/bh1.jpg" width= "40%" height="40%">
-      </div> -->
+
     </body>
 </html>
