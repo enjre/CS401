@@ -15,7 +15,7 @@
             <h3>Check us out on social media!</h3>
 
             
-              <div>
+              <div class="links">
                 <ul>
                   <li><a href="https://www.facebook.com/BoneHausBand/?ref=bookmarks" target="_blank"> Facebook</a> </li>
                   <li><a href="https://www.instagram.com/bonehausofficial/" target="_blank"> Instagram</a></li>
