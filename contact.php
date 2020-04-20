@@ -1,4 +1,4 @@
-
+<?php $thisPage = "contact";?>
 <html>
 <header><title>BONE HAUS-CONTACT </title></header>
   <link rel="stylesheet" type="text/css" href="style.css">

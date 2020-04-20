@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php $thisPage = "media";?>
 <html>
 <header><title>BONE HAUS-MEDIA </title></header>
 <link rel="stylesheet" type="text/css" href="style.css">

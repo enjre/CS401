@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php $thisPage = "gallery";?>
 <html>
 <header><title>BONE HAUS-GALLERY </title></header>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script> 
