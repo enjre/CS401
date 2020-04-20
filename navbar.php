@@ -1,6 +1,4 @@
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome.min.css">
-<head>
+
 
 <div id="right" class="navbar">
 <ul>
@@ -16,7 +14,7 @@
 <div id="left" class="navbar">
     <ul>
         <li <?php if ($thisPage == "index")
-            echo " id=\"currentpage\""; ?> ><a href="index.php"> <i class="fa fa-fw fa-home"></i>SHOWS</a></li>
+            echo " id=\"currentpage\""; ?> ><a href="index.php">SHOWS</a></li>
 
         <li <?php if ($thisPage == "media")
             echo " id=\"currentpage\""; ?> ><a href="media.php">MEDIA</a></li>
