@@ -89,10 +89,12 @@ td{
    align-items: right;
  }
 
+ 
  .navbar li {
+    float: left;
     margin: 0;
     padding: 0;
-    display: inline;
+    
  }
 
  .navbar ul {
@@ -101,6 +103,9 @@ td{
    list-style-type: none;
     margin: 0;
     padding: 0;
+    position: sticky;
+    top: 0;
+    width: auto;
  }
 
  .navbar li a {
