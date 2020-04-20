@@ -85,9 +85,9 @@
           }
 
             $to_email = 'bonehausofficial@gmail.com';
-            $subject = 'subject';
-            $message ='message';
-            $headers = 'From: email';
+            $subject = $_POST['subject'];
+            $message =$_POST['message'];
+            $headers = 'From:' . $_POST['email'];
             $secure_check = sanitize_my_email($to_email);
             if($secure_check == false) {
                 echo "Invalid input";
