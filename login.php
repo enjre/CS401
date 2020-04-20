@@ -15,7 +15,7 @@
       </div>
       
         <h2>
-            <a href="index.html" id="Shows" >Shows</a>
+            <a href="index.php" id="Shows" >Shows</a>
             <a href="media.html" id="Media" >Media</a>
             <a href="gallery.html" id="Gallery" >Gallery</a>
             <a href="contact.php" id="Contact" >Contact</a>
