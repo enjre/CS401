@@ -64,12 +64,12 @@ td{
  }
 
  .col{
-    float: right;
+    float: left;
     /* object-position: 20px 10%; */
  }
  .full-image img{
     /* width: 580px; */
-    height: 50%;
+    height: 45%;
     padding: 10px;
     /* float: right; */
     /* object-position: 20px 10%; */
