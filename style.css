@@ -69,7 +69,7 @@ td{
     float: left;
     /* object-position: 20px 10%; */
  }
- .full-image img{
+ .col full-image img{
     padding: 10px;
     float: right;
     position: -webkit-sticky;
