@@ -69,7 +69,7 @@ if(!$valid) {
 
 $_SESSION['sentiment'] = "good";
 header("Location: index.php");
-?>
+
 
 
 
@@ -87,3 +87,4 @@ if($loginMatch['Username'] == $username && $loginMatch['Password'] == $hashedPW)
     header("Location: login.php");
     exit();
 }
+?>
