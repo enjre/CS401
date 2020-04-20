@@ -1,7 +1,16 @@
 <?php $thisPage = "gallery";?>
 <html>
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+   Add the new slick-theme.css if you want the default styling
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  </head>
 <header><title>BONE HAUS-GALLERY </title></header>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script> 
 
 
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -40,13 +49,20 @@
         </div>
         </div>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   $(document).ready(function(){
     $('.box').click(function(){
       $('.full-image').html($(this).html());
     });
   });
+});
+</script> -->
 
+<script type="text/javascript">
+ $(document).ready(function(){
+  $('.container').slick({
+    setting-name: setting-value
+  });
 </script>
 
 
