@@ -70,6 +70,7 @@ td{
     /* width: 580px; */
     height: 580px;
     padding: 10px;
+    float: right;
  }
 /* 
  .full-image img{
