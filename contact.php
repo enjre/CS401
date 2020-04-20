@@ -78,6 +78,15 @@ $errors= array();
             echo "We will email you at ".$_POST['email'].'<br />';
           }
 
+          function sanitize_my_email($field) {
+            $field = filter_var($field, FILTER_SANITIZE_EMAIL);
+            if (filter_var($field, FILTER_VALIDATE_EMAIL)) {
+                return true;
+            } else {
+              return false;
+            } 
+          }
+
             $to_email = 'bonehausofficial@gmail.com';
             $subject = 'subject';
             $message ='message';
