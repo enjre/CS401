@@ -5,7 +5,7 @@ body{
 
 a:any-link{
    color: white;
-   font-size: large;
+   font-size: x-large;
 }
 
 ul {
@@ -167,7 +167,6 @@ p {
    text-align: center;
    width: 30%;
    float: left;
-   font-size: x-large;
 }
 
 .video {
