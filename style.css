@@ -65,8 +65,8 @@ td{
     float: left;
  }
  .full-image img{
-    width: 580px;
-    height: 580px;
+    width: 40%;
+    height: 40%;
     padding: 10px;
  }
 /* 
