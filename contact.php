@@ -22,7 +22,7 @@
 <?php
   session_start();
 
-$errors= array();
+  $errors= array();
 
     //validate and sanitize name
       if(filter_has_var(INPUT_POST, 'name')){
@@ -94,7 +94,7 @@ $errors= array();
 
             } else {
               mail($to_email, $subject, $message, $headers);
-              echo "This is sent using php mail";
+              echo "Email sent";
             }
 
           ?>
