@@ -12,27 +12,28 @@
            
         
 
-            <h3>Check us out on social media!</h3>
+      <h3>Check us out on social media!</h3>
 
             
-              <div class="links">
-                <ul>
-                  <li><a href="https://www.facebook.com/BoneHausBand/?ref=bookmarks" target="_blank"> Facebook</a> </li>
-                  <li><a href="https://www.instagram.com/bonehausofficial/" target="_blank"> Instagram</a></li>
-                  <li><a href="https://open.spotify.com/artist/1zOUxDDEYax8zcPp7iweuV?si=BM_jzUu6TrixHIUh-Uq1ng" target="_blank"> Spotify</a></li>
-                  <li><a href="https://bonehaus.bandcamp.com/releases" target="_blank"> Bandcamp</a></li>
-                  <li><a href="https://music.apple.com/us/artist/bone-haus/1493912731" target="_blank"> Apple Music</a></li>
-                  <li><a href="https://www.youtube.com/channel/UC-XFQj0K00RrOlM5p0jsy8g" target="_blank"> YouTube</a></li>
-                </ul>
-              </div> 
+      <div class="spot" id="spotify">
+          <iframe src="https://open.spotify.com/embed/album/3VWLTbsbJMVh3GB00Zjbea" width="340" height="428" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+
+      <div class="links">
+        <ul>
+          <li><a href="https://www.facebook.com/BoneHausBand/?ref=bookmarks" target="_blank"> Facebook</a> </li>
+          <li><a href="https://www.instagram.com/bonehausofficial/" target="_blank"> Instagram</a></li>
+          <li><a href="https://open.spotify.com/artist/1zOUxDDEYax8zcPp7iweuV?si=BM_jzUu6TrixHIUh-Uq1ng" target="_blank"> Spotify</a></li>
+          <li><a href="https://bonehaus.bandcamp.com/releases" target="_blank"> Bandcamp</a></li>
+          <li><a href="https://music.apple.com/us/artist/bone-haus/1493912731" target="_blank"> Apple Music</a></li>
+          <li><a href="https://www.youtube.com/channel/UC-XFQj0K00RrOlM5p0jsy8g" target="_blank"> YouTube</a></li>
+        </ul>
+      </div> 
             
 
          
     
-      <div class="spot" id="spotify">
-        Check us out on Spotify!
-        <iframe src="https://open.spotify.com/embed/album/3VWLTbsbJMVh3GB00Zjbea" width="340" height="428" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
+    
 
     <div id="youtube" class="video">
       Check out our live performance at Moonraker Studios!
