@@ -50,7 +50,8 @@ if(empty($username) || empty($password))
 			header("Location: index.php");
 		} 
 		else {
-			$_SESSION['errorMessage'] = "Username or password incorrect.";
+            $_SESSION['errorMessage'] = "Username or password incorrect.";
+            echo "credentials failed";
 			$_SESSION['errorLPass'] = "";
 			$_SESSION['errorUser'] = "";
 			header("Location: login.php");
