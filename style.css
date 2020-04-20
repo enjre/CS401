@@ -3,6 +3,7 @@ body{
    color: white;
 }
 
+
 a:any-link{
    color: white;
    font-size: x-large;
@@ -11,6 +12,10 @@ a:any-link{
 ul {
    align-items: center;
    font-size: x-large;
+}
+
+li {
+   font-family: 'Libre Baskerville', serif;
 }
 
 table{
@@ -95,8 +100,6 @@ td{
     0%{opacity: .1;}
     100%{opacity: 1}
  }
-
-
 
 
  
