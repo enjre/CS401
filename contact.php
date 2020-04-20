@@ -5,12 +5,8 @@
 
     <h1>BONE HAUS</h1>
        
-       <h2> 
-        <a href="index.php" id="Shows" >Shows</a>
-        <a href="media.html" id="Media" >Media</a>
-        <a href="gallery.html" id="Gallery" >Gallery</a>
-        <a href="contact.php" id="Contact" >Contact</a>
-        <a href="login.php" id="login">Login</a>
+    <h2>
+            <?php include("navbar.php"); ?>
         </h2>
 
         <h3>CONTACT</h3>
