@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <header><title>BONE HAUS-GALLERY </title></header>
-<script src="/js/jquery-3.5.0.min.js"></script>
-<link rel="stylesheet" href="ssg.css" />
-<script src="ssg.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script> 
+<!-- <link rel="stylesheet" href="ssg.css" />
+<script src="ssg.js"></script> --> 
 
 <link rel="stylesheet" type="text/css" href="style.css">
     <body>
@@ -19,23 +19,32 @@
        </h2>
            
         <h3>GALLERY</h3>
-        <section class="gallery">
-
-          <a href='imgs/bh2.jpg'>
-            <img src="imgs/bh2.jpg" width="30%" height="30%" alt="Image 2">
-          </a>
-          <a href='imgs/bh3.jpg'>
-            <img src="imgs/bh3.jpg" width= "30%" height="30%" alt="Image 3">
-          </a>
-          <a href='imgs/bh4.jpg'>
-            <img src="imgs/bh4.jpg" width= "60%" height="30%" alt="Image 4">
-          </a>
-          <a href='imgs/bh1.jpg'>
-            <img src="imgs/bh1.jpg" width= "40%" height="40%" alt="Image 1">
-          </a>
-        </section>
+        
+        <div class="container">
+          <div class="col">
+              <div class="box"><img src="imgs/bh1.jpg"></div>
+              <div class="box"><img src="imgs/bh2.jpg"></div>
+              <div class="box"><img src="imgs/bh3.jpg"></div>
+              <div class="box"><img src="imgs/bh4.jpg"></div>
 
 
+          </div>
+          <div class="col">
+            <div class="full-image">
+              <img src="imgs/bh1.jpg">
+            </div>
+
+        </div>
+        </div>
+
+<script type="text/javascript">
+  $(document.ready(function(){
+    $('.box').click(function(){
+      $('.full-image').html($(this).html());
+    });
+  }));
+
+</script>
 
 
 

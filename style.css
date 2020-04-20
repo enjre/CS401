@@ -50,3 +50,27 @@ td{
  #contactform{
     text-align: center;
  }
+
+ .container {
+    width:60%;
+    overflow: auto;
+    margin: 100px auto;
+ }
+
+ .box img{
+    width: 100px;
+ }
+
+ .col{
+    float: left;
+ }
+ .full-image {
+    width: 580px;
+    height: 580px;
+    padding: 10px;
+ }
+
+ .full-image img{
+   width: 100px;
+   height: 100px;
+}
