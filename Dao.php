@@ -11,31 +11,54 @@ class Dao {
         return new PDO("mysql:host={{this->host};dbname={this->db}", $this->username,$this->password);
     }
 
-    public function userLogin ( $username, $password) {
+    public function userLogin ($username) {
       $conn = $this->getConnection();
-      $grab = $conn->prepare("SELECT * from Users where name = '$username' and Password = '$password'");
-      $grab->execute();
-      $result = $grab->fetch(PdO::FETCH_ASSOC);
+      $q = $conn->prepare("SELECT * from Users where name = :username");
+      $q->bindParam(':email', $email);
+      $q->setFetchMode(PDO::FETCH_ASSOC);
+      $q->execute();
+      $result = $q->fetchAll();
       return $result;
     }
       
-    public function getUsername($userName) {
+    public function getUser($username) {
       $conn = $this->getConnection();
-      return $conn->query("SELECT * FROM Users WHERE name = '$userName'", PDO::FETCH_ASSOC);
+      $query= $conn->prepare("SELECT name FROM Users WHERE name = :username");
+      $query->bindParam(':email', $email);
+      $query->setFetchMode(PDO::FETCH_ASSOC);
+      $query->execute();
+      $results = $query->fetch();
+
+      return $results['username'];
     }
 
     public function getPassword ($userName) {
       $conn = $this->getConnection();
-      return $conn->query("SELECT password FROM Users WHERE name = {$userName}", PDO::FETCH_ASSOC);
+      $query = $conn->prepare("SELECT password FROM Users WHERE name = :username");
+      $query->bindParam(':email', $email);
+      $query->setFetchMode(PDO::FETCH_ASSOC);
+      $query->execute();
+      $results = $query->fetch();
+      return $results['password'];
+
+
     }
 
-    public function createLogin($username, $password) {
+    public function createUser($username, $password) {
       $conn = $this->getConnection();
-      $saveQuery = "INSERT INTO Users (name,password) values (:Username, :Password);";
-      $q = $conn->prepare($saveQuery);
-      $q->bindParam(":Username", $username);
-      $q->bindParam(":Password", $password);
-      $q->execute();
+      $query = $conn->prepare("INSERT INTO Users ( name, password) values (:username, :password)");
+      $query->bindParam(':username', $username);
+      $query->bindParam(':password', $password);
+      $query->setFetchMode(PDO::FETCH_ASSOC);
+      $query->execute();
+    }
+
+    public function validateUser ( $username, $password){
+      $conn = $this->getConnection();
+      $check = $conn->query("SELECT name, password FROM Users WHERE name = :username AND password = :password");
+      return $check;
+
+
     }
 
     
