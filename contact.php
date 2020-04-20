@@ -25,8 +25,8 @@
 $errors= array();
 
     //validate and sanitize name
-      if(filter_has_var(INPUT_GET, 'name')){
-        $name = $_GET['name'];
+      if(filter_has_var(INPUT_POST, 'name')){
+        $name = $_POST['name'];
         if(!preg_match("/^([a-zA-Z' ]+)$/" , $name)){
             $errors[] = "Invalid name format";
         } 
@@ -36,8 +36,8 @@ $errors= array();
       } 
 
     //validate and sanitize email
-    if(filter_has_var(INPUT_GET, 'email')){
-        $email = $_GET['email'];
+    if(filter_has_var(INPUT_POST, 'email')){
+        $email = $_POST['email'];
         if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
           $errors[] = "Invalid email format";
         }  else{
@@ -46,11 +46,11 @@ $errors= array();
     } 
 
     //validate and sanitize message
-      if(strlen($_GET['message']) > 500){
+      if(strlen($_POST['message']) > 500){
         $errors[] = "Message can only be 500 characters long";
       }
 
-      if(strlen($_GET['message']) == 0){
+      if(strlen($_POST['message']) == 0){
         $errors[] = "Please leave a message before submitting";
       }
 
@@ -73,9 +73,9 @@ $errors= array();
 
       <div id="output" name="output" align="center">
           <?php 
-          if (isset($_GET['submit'])) {
-            echo "Thanks you for contacting us ".$_GET['name']."!".'<br />';
-            echo "We will email you at ".$_GET['email'].'<br />';
+          if (isset($_POST['submit'])) {
+            echo "Thanks you for contacting us ".$_POST['name']."!".'<br />';
+            echo "We will email you at ".$_POST['email'].'<br />';
           }
 
           function sanitize_my_email($field) {
@@ -94,8 +94,10 @@ $errors= array();
             $secure_check = sanitize_my_email($to_email);
             if($secure_check == false) {
                 echo "Invalid input";
+
             } else {
               mail($to_email, $subject, $message, $headers);
+
             }
 
           ?>
