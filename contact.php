@@ -7,12 +7,13 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
   <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
+
 <header><title>BONE HAUS-CONTACT </title></header>
   <link rel="stylesheet" type="text/css" href="style.css">
 
     <h1>BONE HAUS</h1>
        
-    <h2>
+        <h2>
             <?php include("navbar.php"); ?>
         </h2>
 
@@ -60,11 +61,11 @@
 
     <body>
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-             <p> Name: <input type="text" name="name" value=""></p>
+             <p><label for="email"> Name: <input type="text" name="name" value=""></label></p>
              <p> E-mail: <input type="text" name="email" value =""></p>
              <p> Subject: <input type="text" name="subject" value=""></p>
-              <p>Message: <textarea name="message" rows="5" cols="40"> </textarea></p>
-              <p><input type="submit" name="submit" value="Submit"></p>
+             <p>Message: <textarea name="message" rows="5" cols="40"> </textarea></p>
+             <p><input type="submit" name="submit" value="Submit"></p>
             </form>
 
       <div id="output" name="output" align="center">
@@ -81,7 +82,6 @@
             } else {
               return false;
             }
-            
           }
 
             $to_email = 'bonehausofficial@gmail.com';
