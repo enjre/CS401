@@ -66,6 +66,7 @@ $errors= array();
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
              <p> Name: <input type="text" name="name" value=""></p>
              <p> E-mail: <input type="text" name="email" value =""></p>
+             <p> Subject: <input type="text" name="subject" value=""></p>
               <p>Message: <textarea name="message" rows="5" cols="40"> </textarea></p>
               <p><input type="submit" name="submit" value="Submit"></p>
             </form>
@@ -76,6 +77,20 @@ $errors= array();
             echo "Thanks you for contacting us ".$_POST['name']."!".'<br />';
             echo "We will email you at ".$_POST['email'].'<br />';
           }
+
+            $to_email = 'bonehausofficial@gmail.com';
+            $subject = 'subject';
+            $message ='message';
+            $headers = 'From: email';
+            $secure_check = sanitize_my_email($to_email);
+            if($secure_check == false) {
+                echo "Invalid input";
+
+            } else {
+              mail($to_email, $subject, $message, $headers);
+              echo "This is sent using php mail";
+            }
+
           ?>
       </div>
     </body>
