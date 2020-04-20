@@ -1,17 +1,10 @@
 <?php $thisPage = "gallery";?>
 <html>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-
-  <head>
-
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
 <header><title>BONE HAUS-GALLERY </title></header>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script> 
 
 
-
-
+<link rel="stylesheet" type="text/css" href="style.css">
     <body>
             
        <h1>BONE HAUS</h1>
@@ -53,9 +46,23 @@
       $('.full-image').html($(this).html());
     });
   });
-});
+
 </script>
 
 
+
+
+          <!-- <div class="row">
+            <div class="column">
+              <img src="imgs/bh2.jpg" width="30%" height="30%">
+              <img src="imgs/bh3.jpg" width= "30%" height="30%">
+            </div>
+            <div class="column">
+              <img src="imgs/bh4.jpg" width= "60%" height="30%">
+            </div>
+          </div> -->
+        <!-- <div id="album" class="image">
+          <img src="imgs/bh1.jpg" width= "40%" height="40%">
+      </div> -->
     </body>
 </html>
