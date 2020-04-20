@@ -69,12 +69,15 @@ td{
     float: left;
     /* object-position: 20px 10%; */
  }
- .col full-image img{
+ .full-image img{
     padding: 10px;
     float: right;
-    position: -webkit-sticky;
-    position: sticky;
     animation: ani .5s linear 1;
+ }
+
+ div.full-image {
+   position: -webkit-sticky;
+   position: sticky;
  }
 
  @keyframes ani {
