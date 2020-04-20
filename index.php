@@ -14,10 +14,10 @@
             <?php include("navbar.php"); ?>
         </h2>
 
-        <h3>SHOWS</h3>
+        <h3>UPCOMING SHOWS</h3>
 
         <div>
-            <table style="width:40%" align="center" >
+            <table style="width:40%">
                 <tr>
                     <th>Date</th>
                     <th>Time</th>

@@ -16,6 +16,7 @@ ul {
 table{
    border-spacing: 5px;
    border: 1px solid lightgrey;
+   align-items: center;
 }
 
 td{
