@@ -71,10 +71,11 @@ td{
     float: left;
     /* object-position: 20px 10%; */
  }
- 
+
  .full-image img {
     padding: 10px;
     animation: ani .5s linear 1;
+    margin: 20px 20px 20px 20px;
  }
 
  img.sticky{
@@ -82,7 +83,7 @@ td{
    position: -webkit-sticky;
    top: 0;
    padding: 10px;
-    animation: ani .5s linear 1;
+    /* animation: ani .5s linear 1; */
  }
 
  @keyframes ani {
