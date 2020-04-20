@@ -94,6 +94,9 @@ td{
     margin: 0;
     padding: 0;
     display: inline;
-    background-color: red;
-    overflow: hidden;
+ }
+
+ .navbar ul {
+   background-color: red;
+   overflow: hidden;
  }
