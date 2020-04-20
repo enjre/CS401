@@ -5,9 +5,9 @@ require_once " Dao.php";
 
 
 $dao = new Dao();
-$username = $_REQUEST['username'];
+$username = $_POST['username'];
 $username = filter_var($username,FILTER_SANITIZE_STRING);
-$password = $_REQUEST['password'];
+$password = $_POST['password'];
 $user = $dao->userLogin($username);
 $_SESSION['email_preset'] = $_POST['username'];
 $valid = true;
@@ -21,7 +21,7 @@ $saltedPW = $password . $salt;
 $hashedPW = hash('sha256', $saltedPW);
 
 
-if((empty($username)) && (empty($password))) {
+if((empty($username)) || (empty($password))) {
     $messages[] = "Username and password cannot be blank";
     $valid = false;
     echo " Please enter a valid username";
