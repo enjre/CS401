@@ -69,16 +69,16 @@ td{
     float: left;
     /* object-position: 20px 10%; */
  }
- .full-image img {
+ /* .full-image img {
     padding: 10px;
-    margin-left: auto;
-    /* margin-right: auto; */
     animation: ani .5s linear 1;
- }
+ } */
 
  img.sticky{
    position: sticky;
    position: -webkit-sticky;
+   padding: 10px;
+    animation: ani .5s linear 1;
  }
 
  @keyframes ani {
