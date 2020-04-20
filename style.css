@@ -91,14 +91,8 @@ td{
     100%{opacity: 1}
  }
 
- .spot {
-    align-items: left;
- }
 
- .video {
-   align-items: right;
-   font-size: larger;
- }
+
 
  
  .navbar li {
@@ -152,12 +146,17 @@ p {
 
 .spot {
    text-align: left;
-   width: 50%;
+   width: 30%;
    float: left;
 }
 
 .links {
    text-align: center;
-   width: 50%;
+   width: 30%;
    float: left;
 }
+
+.video {
+   width: 30%;
+   float:left;
+ }
