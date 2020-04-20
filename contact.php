@@ -63,8 +63,8 @@
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
              <p><label for="name"> Name: <input type="text" name="name" value=""></label></p>
              <p><label for="email"> E-mail: <input type="text" name="email" value =""></label></p>
-             <p> <label for="subject">Subject: <input type="text" name="subject" value=""></label></p>
-             <p> <labe for="message">Message: <textarea name="message" rows="5" cols="40"> </textarea> </label></p>
+             <p><label for="subject">Subject: <input type="text" name="subject" value=""></label></p>
+             <p><label for="message">Message: <textarea name="message" rows="5" cols="40"> </textarea> </label></p>
              <p><input type="submit" name="submit" value="Submit"></p>
             </form>
 
