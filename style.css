@@ -71,7 +71,7 @@ td{
  }
  .full-image img {
     padding: 10px;
-    float: right;
+    float: center;
     animation: ani .5s linear 1;
  }
 
