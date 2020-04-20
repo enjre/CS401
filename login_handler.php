@@ -5,11 +5,11 @@ require_once " Dao.php";
 
 
 $dao = new Dao();
-$email = $_REQUEST['email'];
-$email = filter_var($email,FILTER_SANITIZE_EMAIL);
+$username = $_REQUEST['username'];
+$username = filter_var($username,FILTER_SANITIZE_STRING);
 $password = $_REQUEST['password'];
 $user = $dao->userLogin($username);
-$_SESSION['email_preset'] = $_POST['email'];
+$_SESSION['email_preset'] = $_POST['username'];
 $valid = true;
 $messages = array();
 
@@ -61,7 +61,7 @@ if(!$user) {
 }
 
 if(!$valid) {
-    $_SESSION['sentiment'] = "Incorrect email or password";
+    $_SESSION['sentiment'] = "Incorrect username or password";
     $_SESSION['messages'] = $messages;
         header("Location: login.php");
         exit();
@@ -70,21 +70,4 @@ if(!$valid) {
 $_SESSION['sentiment'] = "good";
 header("Location: index.php");
 
-
-
-
-$loginMatch = $dao->userLogin($username, $hashedPW);
-
-if($loginMatch['Username'] == $username && $loginMatch['Password'] == $hashedPW) {
-    $_SESSION['auth'] = true;
-    $_SESSION['Message'] = "You are logged in";
-    $_SESSION['logged_in'] = true;
-    header("Location: index.php");
-    exit();
-} else {
-    $_SESSION['auth'] = false;
-    $_SESSION['message'] = "Username or password invalid";
-    header("Location: login.php");
-    exit();
-}
 ?>

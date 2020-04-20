@@ -25,10 +25,14 @@
     
         <div class="loginbox">
             <?php 
-                if(isset($_SESSION['message'])) {
+
+            $user = "";
+
+                if(isset($_SESSION['username'])) {
+                    $user = $_SESSION['username'];
                     echo "<div id='error'>{$_SESSION['message']}</div>";
                 }
-                    unset($_SESSION['message']);
+                    unset($_SESSION['username']);
              ?>
         
 
