@@ -28,16 +28,12 @@
               <div class="box"><img src="imgs/bh9.jpg"></div>
               <div class="box"><img src="imgs/bh10.jpg"></div>
               <div class="box"><img src="imgs/bh11.jpg" width="400px" height="600px"></div>
-              
-
-
           </div>
-          <div class="col">
+          
             <div class="full-image">
               <img src="imgs/bh1.jpg" width="500px" height="500px">
+            
             </div>
-
-        </div>
         </div>
 
 <script type="text/javascript">

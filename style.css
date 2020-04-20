@@ -75,10 +75,10 @@ td{
     animation: ani .5s linear 1;
  }
 
- col full-image {
-   position: -webkit-sticky;
+.full-image {
    position: sticky;
- }
+   position: -webkit-sticky;
+}
 
  @keyframes ani {
     0%{opacity: .1;}
