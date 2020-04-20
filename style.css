@@ -71,9 +71,10 @@ td{
     height: 580px;
     padding: 10px;
     float: right;
+    animation: ani .5s linear 1;
  }
-/* 
- .full-image img{
-   width: 100px;
-   height: 100px;
-} */
+
+ @keyframes ani {
+    0%{opacity: .1;}
+    100%{opacity: 1}
+ }
