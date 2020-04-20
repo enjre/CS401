@@ -73,6 +73,7 @@ td{
  }
 .full-image {
    height: 50%;
+   width: 50%;
 }
 
 .full-image img {
