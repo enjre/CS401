@@ -7,6 +7,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
   <link rel="manifest" href="favicon_io/site.webmanifest">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script> 
+  <script src="js/jquery.validate.js"></script>
 </head>
 
 <header><title>BONE HAUS-CONTACT </title></header>
@@ -59,11 +61,21 @@
 ?>
 
     <body>
-            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-             <p><label for="name"> Name: <input type="text" name="name" value=""></label></p>
-             <p><label for="email"> E-mail: <input type="text" name="email" value =""></label></p>
+          <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+            <p>
+               <label for="name"> Name: <span>(required, at least 2 characters)</span></label>
+               <input id="name" minlength = "2" type="text" name="name" required/>
+            </p>
+
+             <p>
+               <label for="email"> E-mail: <span>(required, but won't be published)</span></label>
+               <input id="email" type="email" name="email" required/>
+              </p>
+
              <p><label for="subject">Subject: <input type="text" name="subject" value=""></label></p>
+
              <p><label for="message">Message: <textarea name="message" rows="5" cols="40"> </textarea> </label></p>
+
              <p><input type="submit" name="submit" value="Submit"></p>
             </form>
 
