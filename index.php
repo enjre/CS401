@@ -11,7 +11,7 @@
       </div>
       
         <h2>
-            
+            <?php include("navbar.php"); ?>
         </h2>
 
         <h3>SHOWS</h3>
