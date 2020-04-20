@@ -48,11 +48,11 @@
             <form action="login_handler.php" method="post">
                  <p>
                     <label class="formitem" for="username"> Username:</label>
-                    <input type="text" id="username" name="username" minlength= "7" required/>
+                    <input type="text" id="username" name="username" minlength= "8" required/>
                  </p>
                  <p>
                     <label class="formitem" for="password">Password:</label>
-                    <input type="password" id="password" name="password" minlength= "7" required/>
+                    <input type="password" id="password" name="password" minlength= "8" required/>
                 </p>
                 
                 <p>
