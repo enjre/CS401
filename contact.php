@@ -54,10 +54,6 @@ $errors= array();
         $errors[] = "Please leave a message before submitting";
       }
 
-
-
-
-
 ?>
 
 
@@ -68,7 +64,7 @@ $errors= array();
              <p> E-mail: <input type="text" name="email" value =""></p>
              <p> Subject: <input type="text" name="subject" value=""></p>
               <p>Message: <textarea name="message" rows="5" cols="40"> </textarea></p>
-              <div id="butt"><p><button type="button" name="submit" value="Submit" onclick="loadDoc()"></p></div>
+              <p><input type="submit" name="submit" value="Submit"></p>
             </form>
 
       <div id="output" name="output" align="center">
@@ -84,7 +80,8 @@ $errors= array();
                 return true;
             } else {
               return false;
-            } 
+            }
+            
           }
 
             $to_email = 'bonehausofficial@gmail.com';
@@ -97,23 +94,10 @@ $errors= array();
 
             } else {
               mail($to_email, $subject, $message, $headers);
-
+              echo "This is sent using php mail";
             }
 
           ?>
-
       </div>
-
-      <script>
-        function loadDoc() {
-          var xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function();
-          if(this.readyState == 4 && this.status== 200) {
-            document.getElementByID("butt").innerHTML = this.responseText;
-          }
-        };
-        xhttp.open("GET", "submission.txt", true);
-        xhttp.send();
-        </script>
     </body>
 </html>
