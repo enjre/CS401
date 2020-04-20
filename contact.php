@@ -94,10 +94,8 @@ $errors= array();
             $secure_check = sanitize_my_email($to_email);
             if($secure_check == false) {
                 echo "Invalid input";
-
             } else {
               mail($to_email, $subject, $message, $headers);
-              echo "This is sent using php mail";
             }
 
           ?>
