@@ -118,3 +118,9 @@ td{
  .navbar li a:hover {
     background-color: #7e4dd1;
  }
+
+
+ #currentpage {
+   font-size: 24px;
+   text-shadow: 1px 1px 4px deepskyblue;
+ }
