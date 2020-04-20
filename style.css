@@ -72,18 +72,14 @@ td{
  .full-image img {
     padding: 10px;
     margin-left: auto;
-    margin-right: auto;
+    /* margin-right: auto; */
     animation: ani .5s linear 1;
  }
 
- .full-image.sticky {
+ img.sticky{
    position: sticky;
    position: -webkit-sticky;
  }
-/* .full-image {
-   position: sticky;
-   position: -webkit-sticky;
-} */
 
  @keyframes ani {
     0%{opacity: .1;}
