@@ -52,7 +52,7 @@
                  </p>
                  <p>
                     <label class="formitem" for="password">Password:</label>
-                    <input type="password" id="password" name="password"/>
+                    <input type="password" id="password" name="password" minlength= "7" required/>
                 </p>
                 
                 <p>
