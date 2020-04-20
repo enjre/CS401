@@ -71,12 +71,15 @@ td{
     float: left;
     /* object-position: 20px 10%; */
  }
+.full-image {
+   height: 50%;
+}
 
- .full-image img {
-    padding: 10px;
-    animation: ani .5s linear 1;
-    margin: 20px 20px 20px 20px;
- }
+.full-image img {
+   padding: 10px;
+   animation: ani .5s linear 1;
+   margin: 20px 20px 20px 20px;
+}
 
  img.sticky{
    position: sticky;
