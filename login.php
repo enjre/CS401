@@ -10,9 +10,9 @@
         <body>
             <h1>Please Log In</h1>
 
-            <div class="title">
-        <h1>BONE HAUS</h1>
-      </div>
+        <div class="title">
+            <h1>BONE HAUS</h1>
+        </div>
       
         <h2>
             <?php include("navbar.php"); ?>
