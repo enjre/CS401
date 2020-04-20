@@ -98,7 +98,7 @@ td{
  }
 
  .navbar ul {
-   background-color: red;
+   background-color: #4C04c9;
    overflow: hidden;
    list-style-type: none;
     margin: 0;
@@ -117,5 +117,5 @@ td{
  }
 
  .navbar li a:hover {
-    background-color: blue;
+    background-color: #7e4dd1;
  }
