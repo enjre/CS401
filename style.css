@@ -71,7 +71,7 @@ td{
     /* width: 580px; */
     height: 45%;
     padding: 10px;
-    /* float: right; */
+    float: right;
     /* object-position: 20px 10%; */
     animation: ani .5s linear 1;
  }
