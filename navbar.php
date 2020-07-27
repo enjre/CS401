@@ -1,16 +1,5 @@
 
 
-<div id="right" class="navbar">
-<ul>
-            <!-- <li <?php if ($thisPage == "logout")
-            echo " id=\"currentpage\""; ?> ><a href="logout.php">LOGOUT</a></li>
-
-
-             <li <?php if ($thisPage == "login")
-            echo " id=\"currentpage\""; ?>> <a href="login.php" >LOGIN | SIGN UP</a></li>   -->
-</ul>
-</div>
-
 <div id="left" class="navbar">
     <ul>
         <li <?php if ($thisPage == "index")
