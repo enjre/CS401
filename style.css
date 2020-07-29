@@ -99,7 +99,7 @@ td{
 }
 
 .full-image img {
-   padding: 10px;
+   padding: 2px;
    animation: ani .5s linear 1;
    margin: 20px 20px 20px 20px;
    border: 4px solid white;
