@@ -2,6 +2,8 @@ body{
    background-color: #a974ce; 
    color: white;
    background-image: url('imgs/bh7.jpg');
+   background-repeat: no-repeat;
+   background-size: 100%;
    /* height: 100%; */
 }
 
