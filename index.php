@@ -18,9 +18,6 @@
       </div>
       
       
-        
-
-
         <h4>PAST SHOWS</h4>
 
         <div>

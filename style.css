@@ -1,5 +1,5 @@
 body{
-   background-color: #a974ce; 
+   background-color: #3c3939; 
    color: white;
    background-image: url('imgs/bh7.jpg');
    background-repeat: no-repeat;
@@ -151,7 +151,7 @@ td{
  }
 
  .navbar li a:hover {
-    background-color: #7e4dd1;
+    background-color: #390396;
  }
 
 
