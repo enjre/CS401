@@ -130,6 +130,7 @@ td{
     padding: 0;
     top: 0;
     width: auto;
+    opacity: 0.5;
  }
 
  .navbar left {
@@ -150,7 +151,6 @@ td{
 
  .navbar li a:hover {
     background-color: #7e4dd1;
-    opacity: 0.5;
  }
 
 
