@@ -45,9 +45,15 @@ td{
     line-height: 200%;
  }
 
- h1, h2, h3, h4 {
+ h1, h2, h3 {
     text-align: center;
     font-family: 'Libre Baskerville', serif;
+ }
+
+ h4 {
+   text-align: center;
+   font-family: 'Libre Baskerville', serif;
+   padding-top: 0%;
  }
 
  .title {
