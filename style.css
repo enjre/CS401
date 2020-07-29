@@ -194,4 +194,6 @@ p {
    margin-bottom: 15px;
  }
 
- 
+ audio {
+    width: 10%;
+ }
