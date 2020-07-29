@@ -150,6 +150,7 @@ td{
 
  .navbar li a:hover {
     background-color: #7e4dd1;
+    opacity: 0.5;
  }
 
 
