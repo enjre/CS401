@@ -39,7 +39,7 @@
           
           <li><a href="https://music.apple.com/us/artist/bone-haus/1493912731" target="_blank"> <img class="audio" src = "imgs/pinpng.com-apple-music-logo-png-316706.png" alt= "apple logo"></a></li>
           
-          <li><a href="https://www.youtube.com/channel/UC-XFQj0K00RrOlM5p0jsy8g" target="_blank"> YouTube</a></li>
+          <li><a href="https://www.youtube.com/channel/UC-XFQj0K00RrOlM5p0jsy8g" target="_blank"> <img class="audio" src = "imgs/yt_logo_mono_light.png" alt= "youtube logo"></a></li>
         
         </ul>
       </div> 
