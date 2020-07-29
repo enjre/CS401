@@ -120,7 +120,9 @@
                 echo "Invalid input";
 
             } else {
-              mail($to_email, $subject, $message, $headers);
+              if(isset($_POST['to_email']) && isset($_POST['subject']) && isset($_POST['message']) && isset($_POST['headers']))
+                mail($to_email, $subject, $message, $headers);
+
             }
 
           ?>
