@@ -35,7 +35,7 @@
 
           <li><a href="https://open.spotify.com/artist/1zOUxDDEYax8zcPp7iweuV?si=BM_jzUu6TrixHIUh-Uq1ng" target="_blank"> <img class="audio" src = "imgs/spotify.png" alt= "spotify logo"></a></li>
           
-          <li><a href="https://bonehaus.bandcamp.com/releases" target="_blank"> Bandcamp</a></li>
+          <li><a href="https://bonehaus.bandcamp.com/releases" target="_blank"> <img class="audio" src = "imgs/bandcamp-logotype-dark-32.png" alt= "bandcamp logo"></a></li>
           
           <li><a href="https://music.apple.com/us/artist/bone-haus/1493912731" target="_blank"> Apple Music</a></li>
           
