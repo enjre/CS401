@@ -1,11 +1,6 @@
 <?php $thisPage = "index";?>
 
 <html>
-<style>
-    div {
-        background-image: url('imgs/bh4.jpg');
-    }
-</style> 
 
     <head><title> BONE HAUS-SHOWS </title>
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -16,7 +11,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     </head>
     <body>
-
+    <style>
+        div {
+            background-image: url('imgs/bh4.jpg');
+        }
+    </style> 
       <div class="title">
         <h1>BONE HAUS</h1>
       </div>
