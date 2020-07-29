@@ -37,7 +37,7 @@
           
           <li><a href="https://bonehaus.bandcamp.com/releases" target="_blank"> <img class="audio" src = "imgs/bandcamp-logotype-dark-32.png" alt= "bandcamp logo"></a></li>
           
-          <li><a href="https://music.apple.com/us/artist/bone-haus/1493912731" target="_blank"> Apple Music</a></li>
+          <li><a href="https://music.apple.com/us/artist/bone-haus/1493912731" target="_blank"> <img class="audio" src = "imgs/pinpng.com-apple-music-logo-png-316706.png" alt= "apple logo"></a></li>
           
           <li><a href="https://www.youtube.com/channel/UC-XFQj0K00RrOlM5p0jsy8g" target="_blank"> YouTube</a></li>
         
