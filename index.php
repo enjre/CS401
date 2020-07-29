@@ -1,6 +1,12 @@
 <?php $thisPage = "index";?>
 
 <html>
+<style>
+    div {
+        background-image: url('imgs/bh4.jpg');
+    }
+</style> 
+
     <head><title> BONE HAUS-SHOWS </title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
@@ -14,6 +20,7 @@
       <div class="title">
         <h1>BONE HAUS</h1>
       </div>
+      
       
         <h2>
             <?php include("navbar.php"); ?>
