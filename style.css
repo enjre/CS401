@@ -200,7 +200,7 @@ p {
  }
 
  .audio {
-    width: 25%;
+    height: 25%;
     -webkit-filter: invert(1);
     filter: invert(1);
  }
