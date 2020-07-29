@@ -24,7 +24,6 @@
         <div><p>Reach us on <a href="media.html">social media</a> or at bonehausofficial@gmail.com</p></div>
 
 <?php
-  session_start();
 
   $errors= array();
 
@@ -49,7 +48,7 @@
         }
     } 
 
-    //validate and sanitize message
+    if( isset($_POST['message'])) {
       if(strlen($_POST['message']) > 500){
         $errors[] = "Message can only be 500 characters long";
       }
@@ -58,6 +57,11 @@
         $errors[] = "Please leave a message before submitting";
       }
 
+
+    }
+
+    //validate and sanitize message
+      
 ?>
 
     <body>
