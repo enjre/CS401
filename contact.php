@@ -63,12 +63,12 @@
     <body>
           <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
             <p>
-               <label for="name"> Name: <span>(required, at least 2 characters)</span></label>
+               <label for="name"> Name: <span></span></label>
                <input id="name" minlength = "2" type="text" name="name" required/>
             </p>
 
              <p>
-               <label for="email"> E-mail: <span>(required, but won't be published)</span></label>
+               <label for="email"> E-mail: <span></span></label>
                <input id="email" type="email" name="email" required/>
               </p>
 
