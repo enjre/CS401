@@ -31,7 +31,7 @@
         <ul>
           <li><a href="https://www.facebook.com/BoneHausBand/?ref=bookmarks" target="_blank"> <img class="audio" src = "imgs/fb.png" alt= "facebook logo"></a> </li>
 
-          <li><a href="https://www.instagram.com/bonehausofficial/" target="_blank"> <img class="audio" src = "imgs/ig.png" alt= "instagram logo"></a></li>
+          <li><a href="https://www.instagram.com/bonehausofficial/" target="_blank"> <img class="audio" src = "imgs/instagram-logo-png-2442.png" alt= "instagram logo"></a></li>
 
           <li><a href="https://open.spotify.com/artist/1zOUxDDEYax8zcPp7iweuV?si=BM_jzUu6TrixHIUh-Uq1ng" target="_blank"> <img class="audio" src = "imgs/spotify.png" alt= "spotify logo"></a></li>
           

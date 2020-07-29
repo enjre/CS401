@@ -123,7 +123,7 @@ td{
  }
 
  .navbar ul {
-   background-color: #4C04c9;
+   /* background-color: #4C04c9; */
    overflow: hidden;
    list-style-type: none;
     margin: 0;
