@@ -112,7 +112,7 @@
               if(isset($_POST['message'])){
                 $message =$_POST['message'];
               }
-              if(isset(['email'])){
+              if(isset($_POST['email'])){
                 $headers = 'From: ' . $_POST['email'];
               }
             $secure_check = sanitize_my_email($to_email);
