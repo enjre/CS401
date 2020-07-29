@@ -14,17 +14,14 @@
 
       <div class="title">
         <h1>BONE HAUS</h1>
+        <?php include("navbar.php"); ?>
       </div>
       
       
-        <h2>
-            <?php include("navbar.php"); ?>
-        </h2>
-
-        <!-- <div class="bckgrnd-img"> <img src="imgs/bh4.jpg"></div> -->
+        
 
 
-        <h4>UPCOMING SHOWS</h4>
+        <h4>PAST SHOWS</h4>
 
         <div>
             <table style="width:40%">
