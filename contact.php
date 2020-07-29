@@ -1,5 +1,5 @@
 <?php $thisPage = "contact";?>
-<html>
+<html manifest="/example.appcache"> 
 
 <head>
   <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">

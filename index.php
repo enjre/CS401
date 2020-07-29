@@ -1,6 +1,6 @@
 <?php $thisPage = "index";?>
 
-<html>
+<html manifest="/example.appcache">
 
     <head><title> BONE HAUS-SHOWS </title>
         <link rel="stylesheet" type="text/css" href="style.css">
