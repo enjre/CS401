@@ -1,7 +1,7 @@
-body{
+/* body{
    background-color: #222; 
    color: white;
-}
+} */
 
 
 a:any-link{
@@ -191,3 +191,8 @@ p {
    margin-top: 15px;
    margin-bottom: 15px;
  }
+
+ body {
+   background-image: url('bh4.jpg');
+   /* background-color: #cccccc; */
+  }

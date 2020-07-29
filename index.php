@@ -11,11 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     </head>
     <body>
-    <style>
-        div {
-            background-image: url('imgs/bh4.jpg');
-        }
-    </style> 
+
       <div class="title">
         <h1>BONE HAUS</h1>
       </div>
@@ -25,7 +21,7 @@
             <?php include("navbar.php"); ?>
         </h2>
 
-        <!-- <div class="frontimg"> <img src="imgs/bh4.jpg"></div> -->
+        <!-- <div class="bckgrnd-img"> <img src="imgs/bh4.jpg"></div> -->
 
 
         <h4>UPCOMING SHOWS</h4>
