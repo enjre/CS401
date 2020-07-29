@@ -1,8 +1,8 @@
 body{
-   background-color: #222; 
-   color: white;
-   background-image: url('imgs/bh7.jpg');
-   height: 100%;
+   background-color: #480b5c; 
+   /* color: white; */
+   /* background-image: url('imgs/bh7.jpg'); */
+   /* height: 100%; */
 }
 
 
@@ -130,7 +130,7 @@ td{
     padding: 0;
     top: 0;
     width: auto;
-    opacity: 0.75;
+    opacity: 0.18;
  }
 
  .navbar left {
