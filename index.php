@@ -47,6 +47,16 @@
                     <td>7:00pm</td>
                     <td>Regal Beaver</td>
                 </tr>
+                <tr>
+                    <td>May 30th</td>
+                    <td>6:00pm</td>
+                    <td>Boise Hive (Livestream Only)</td>
+                </tr>
+                <tr>
+                    <td>July 18</td>
+                    <td>6:30pm</td>
+                    <td>Sobersick Ranch</td>
+                </tr>
             </table>
         </div>
 
